@@ -86,7 +86,7 @@ const LineChart = ({ isCustomLineColors = false, isDashboard = false }) => {
         tickSize: 5,
         tickPadding: 5,
         tickRotation: 0,
-        legend: isDashboard ? null:"transportation",
+        legend: isDashboard ? null : "transportation",
         legendOffset: 36,
         legendPosition: "middle",
       }}

@@ -2,7 +2,6 @@ import { useTheme } from "@mui/material";
 import { ResponsiveBar } from "@nivo/bar";
 import { tokens } from "../theme";
 import { mockBarData as data } from "../Data/mockData";
-import { color } from "@mui/system";
 
 const BarChart = ({ isDashboard = false }) => {
   const theme = useTheme();
@@ -12,56 +11,56 @@ const BarChart = ({ isDashboard = false }) => {
     <ResponsiveBar
       data={data}
       theme={{
-        "axis": {
-            "domain": {
-                "line": {
-                    "stroke": colors.grey[800],
-                    "strokeWidth": 1
-                }
+        axis: {
+          domain: {
+            line: {
+              stroke: colors.grey[800],
+              strokeWidth: 1,
             },
-            "legend": {
-                "text": {
-                    "fontSize": 12,
-                    "fill": colors.grey[100]
-                }
+          },
+          legend: {
+            text: {
+              fontSize: 12,
+              fill: colors.grey[100],
             },
-            "ticks": {
-                "line": {
-                    "stroke": colors.grey[800],
-                    "strokeWidth": 1
-                },
-                "text": {
-                    "fontSize": 11,
-                    "fill": colors.grey[100]
-                }
-            }
+          },
+          ticks: {
+            line: {
+              stroke: colors.grey[800],
+              strokeWidth: 1,
+            },
+            text: {
+              fontSize: 11,
+              fill: colors.grey[100],
+            },
+          },
         },
-        "legends": {
-            "title": {
-                "text": {
-                    "fontSize": 12,
-                    "fill": colors.grey[100]
-                }
+        legends: {
+          title: {
+            text: {
+              fontSize: 12,
+              fill: colors.grey[100],
             },
-            "text": {
-                "fontSize": 13,
-                "fill": colors.grey[100]
+          },
+          text: {
+            fontSize: 13,
+            fill: colors.grey[100],
+          },
+          ticks: {
+            line: {},
+            text: {
+              fontSize: 10,
+              fill: colors.grey[100],
             },
-            "ticks": {
-                "line": {},
-                "text": {
-                    "fontSize": 10,
-                    "fill": colors.grey[100]
-                }
-            }
+          },
         },
-        "tooltip": {
-            "container": {
-                "background": "#ffffff",
-                "color": "#333333",
-                "fontSize": 11
-            },
-        }
+        tooltip: {
+          container: {
+            background: "#ffffff",
+            color: "#333333",
+            fontSize: 11,
+          },
+        },
       }}
       keys={["hot dog", "burger", "sandwich", "kebab", "fries", "donut"]}
       indexBy="country"
@@ -123,7 +122,7 @@ const BarChart = ({ isDashboard = false }) => {
         tickSize: 5,
         tickPadding: 5,
         tickRotation: 0,
-        legend: isDashboard ? null:"food",
+        legend: isDashboard ? null : "food",
         legendPosition: "middle",
         legendOffset: -40,
       }}
