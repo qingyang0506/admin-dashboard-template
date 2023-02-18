@@ -1,5 +1,3 @@
-
-import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import Topbar from "./Scenes/global/Topbar";
 import Sidebar from "./Scenes/global/Siderbar";
@@ -17,7 +15,6 @@ import Calendar from "./Scenes/calendar";
 
 function App() {
   const [theme, colorMode] = useMode();
-  // const [isSidebar, setIsSidebar] = useState(true);
 
   return (
     <ColorModeContext.Provider value={colorMode}>

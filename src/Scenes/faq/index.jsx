@@ -41,7 +41,7 @@ const Faq = () => {
           </Typography>
         </AccordionDetails>
       </Accordion>
-      <Accordion >
+      <Accordion>
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
           <Typography color={colors.greenAccent[500]} variant="h5">
             Your Favorite Question
@@ -54,7 +54,7 @@ const Faq = () => {
           </Typography>
         </AccordionDetails>
       </Accordion>
-      <Accordion >
+      <Accordion>
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
           <Typography color={colors.greenAccent[500]} variant="h5">
             Some Random Question
@@ -67,7 +67,7 @@ const Faq = () => {
           </Typography>
         </AccordionDetails>
       </Accordion>
-      <Accordion >
+      <Accordion>
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
           <Typography color={colors.greenAccent[500]} variant="h5">
             The Final Question
